@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FundMe App</title>
+  </head>
+  <body>
+    Fund Me Website!
+    <script src="./index.js" type="module"></script>
+    <button id="connectButton">Connect</button>
+    <button id="Fund">Fund</button>
+    <button id="getBalance">Balance</button>
+    <button id="getWithdraw">withdraw</button>
+
+    <label for="fund">ETH Amount</label>
+    <input
+      id="ethAmount"
+      placeholder="Enter amount in ETH"
+      type="number"
+      min="0"
+      onkeyup="if(this.value<0){this.value= this.value * -1}"
+    />
+  </body>
+</html>
